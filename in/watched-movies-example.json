@@ -1,0 +1,62 @@
+[
+    {
+        "last_updated_at": "2026-11-10T07:50:42.000Z",
+        "last_watched_at": "2026-11-10T07:50:00.000Z",
+        "movie": {
+            "ids": {
+                "imdb": "tt35538033",
+                "plex": {
+                    "guid": "67a23f4861078f9079534716",
+                    "slug": "resident-evil-2026"
+                },
+                "slug": "resident-evil-2026",
+                "tmdb": 1423191,
+                "trakt": 1164118
+            },
+            "year": 2026,
+            "title": "Resident Evil"
+        },
+        "plays": 1,
+        "total_count": 232
+    },
+    {
+        "last_updated_at": "2026-11-08T19:56:36.000Z",
+        "last_watched_at": "2026-11-08T19:56:00.000Z",
+        "movie": {
+            "ids": {
+                "imdb": "tt0343660",
+                "plex": {
+                    "guid": "5d77682aeb5d26001f1de2ba",
+                    "slug": "50-first-dates"
+                },
+                "slug": "50-first-dates-2004",
+                "tmdb": 1824,
+                "trakt": 1206
+            },
+            "year": 2004,
+            "title": "50 First Dates"
+        },
+        "plays": 1,
+        "total_count": 232
+    },
+    {
+        "last_updated_at": "2026-11-07T23:39:28.000Z",
+        "last_watched_at": "2026-11-02T17:15:00.000Z",
+        "movie": {
+            "ids": {
+                "imdb": "tt1756855",
+                "plex": {
+                    "guid": "5d77707b81ba41001faf1629",
+                    "slug": "coyote-vs-acme"
+                },
+                "slug": "coyote-vs-acme-2026",
+                "tmdb": 1204680,
+                "trakt": 970531
+            },
+            "year": 2026,
+            "title": "Coyote vs. Acme"
+        },
+        "plays": 1,
+        "total_count": 232
+    }
+]

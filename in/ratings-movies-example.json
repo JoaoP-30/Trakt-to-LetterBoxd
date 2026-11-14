@@ -19,22 +19,22 @@
         }
     },
     {
-        "rated_at": "2026-11-08T19:56:47.000Z",
+        "rated_at": "2026-11-07T23:39:33.000Z",
         "rating": 7,
         "type": "movie",
         "movie": {
             "ids": {
-                "imdb": "tt0343660",
+                "imdb": "tt1756855",
                 "plex": {
-                    "guid": "5d77682aeb5d26001f1de2ba",
-                    "slug": "50-first-dates"
+                    "guid": "5d77707b81ba41001faf1629",
+                    "slug": "coyote-vs-acme"
                 },
-                "slug": "50-first-dates-2004",
-                "tmdb": 1824,
-                "trakt": 1206
+                "slug": "coyote-vs-acme-2026",
+                "tmdb": 1204680,
+                "trakt": 970531
             },
-            "year": 2004,
-            "title": "50 First Dates"
+            "year": 2026,
+            "title": "Coyote vs. Acme"
         }
     }
 ]
