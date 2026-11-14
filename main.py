@@ -1,5 +1,6 @@
 import json
 import csv
+from datetime import datetime, timedelta
 
 
 def read_file():
@@ -25,11 +26,21 @@ def process_json_file(file):
 
     for item in file:
 
+        raw_date = item.get("last_watched_at")
+
+        formated_date = None
+
+        if raw_date:
+            dt = datetime.strptime(raw_date, "%Y-%m-%dT%H:%M:%S.%fZ")
+
+            formated_date = dt.strftime("%Y-%m-%d")
+
         title = item.get("movie", {}).get("title")
         year = item.get("movie", {}).get("year")
+        watched_date = formated_date
         imdb = item.get("movie", {}).get("ids", {}).get("imdb")
 
-        movie_info = [title, year, imdb]
+        movie_info = [title, year, watched_date, imdb]
 
         filtred_movies.append(movie_info)
 
@@ -43,7 +54,7 @@ def export_to_csv(processed_data):
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
 
-            writer.writerow(["Title", "Year", "IMDb"])
+            writer.writerow(["Title", "Year", "WatchedDate", "imdbID"])
 
             writer.writerows(processed_data)
 
