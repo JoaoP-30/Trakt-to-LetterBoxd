@@ -1,6 +1,6 @@
 import json
 import csv
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 def read_file():
