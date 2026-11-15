@@ -2,7 +2,7 @@
 
 from datetime import datetime
 
-def process_json_file(file):
+def process_json_file(file, ratings):
 
     filtred_movies = []
 
@@ -22,7 +22,12 @@ def process_json_file(file):
         watched_date = formated_date
         imdb = item.get("movie", {}).get("ids", {}).get("imdb")
 
-        movie_info = [title, year, watched_date, imdb]
+        rate = ""
+
+        if imdb in ratings:
+            rate = ratings[imdb]
+
+        movie_info = [title, year, rate, watched_date, imdb]
 
         filtred_movies.append(movie_info)
 

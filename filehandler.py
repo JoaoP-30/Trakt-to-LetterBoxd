@@ -29,7 +29,7 @@ def export_to_csv(processed_data):
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
 
-            writer.writerow(["Title", "Year", "WatchedDate", "imdbID"])
+            writer.writerow(["Title", "Year", "Rating", "WatchedDate", "imdbID"])
 
             writer.writerows(processed_data)
 
