@@ -39,7 +39,6 @@ python main.py
 ---
 
 ## ⚠️ Limitações Atuais
-* Exporta **apenas filmes** (séries não são suportadas).
 * Exporta datas de visualização e avaliações, **sem comentários/resenhas**.
 
 ---

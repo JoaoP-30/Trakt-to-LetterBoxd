@@ -39,7 +39,6 @@ python main.py
 ---
 
 ## ⚠️ Current Limitations
-* Exports **movies only** (TV shows are not supported).
 * Exports watch dates and ratings, **excluding reviews/comments**.
 
 ---
