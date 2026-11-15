@@ -23,7 +23,7 @@ def read_file(file_path):
 
 
 def export_to_csv(processed_data):
-    file_path = FILE_PATHS["output_csv"]
+    file_path = FILE_PATHS["output-csv"]
 
     try:
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:

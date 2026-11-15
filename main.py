@@ -7,7 +7,7 @@ def main():
 
     # 1. Read the JSON files
 
-    watched_movies_file = read_file(file_path=FILE_PATHS["input_watched-movies"])
+    watched_movies_file = read_file(file_path=FILE_PATHS["input-watched-movies"])
     ratings_movies_file = read_file(file_path=FILE_PATHS["input-ratings-movies"])
 
     # 2. Process the JSON files

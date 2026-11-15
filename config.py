@@ -2,7 +2,7 @@
 
 
 FILE_PATHS = {
-    "input_watched-movies": "in/watched-movies.json",
+    "input-watched-movies": "in/watched-movies.json",
     "input-ratings-movies": "in/ratings-movies.json",
-    "output_csv": "out/movies.csv",
+    "output-csv": "out/movies.csv",
 }
