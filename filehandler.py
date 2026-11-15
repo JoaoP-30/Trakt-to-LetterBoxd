@@ -2,6 +2,7 @@
 
 import json
 import csv
+from config import FILE_PATHS
 
 
 def read_file(file_path):
@@ -22,7 +23,7 @@ def read_file(file_path):
 
 
 def export_to_csv(processed_data):
-    file_path = "out/movies.csv"
+    file_path = FILE_PATHS["output_csv"]
 
     try:
         with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
