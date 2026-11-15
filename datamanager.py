@@ -2,7 +2,6 @@
 
 from datetime import datetime
 
-
 def process_json_file(file):
 
     filtred_movies = []
@@ -28,3 +27,17 @@ def process_json_file(file):
         filtred_movies.append(movie_info)
 
     return filtred_movies
+
+
+def process_json_file_ratings(file):
+
+    filtred_movies_ratings = {}
+
+    for item in file:
+        rating = float(item.get("rating")) / 2
+
+        imdb = item.get("movie", {}).get("ids", {}).get("imdb")
+
+        filtred_movies_ratings[imdb] = rating
+
+    return filtred_movies_ratings
